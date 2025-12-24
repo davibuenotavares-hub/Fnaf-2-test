@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Night Shift 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="game">
+
+  <div id="hallway">Corredor Principal</div>
+  <div id="animatronic"></div>
+
+  <div id="mask">MÁSCARA</div>
+  <div id="jumpscare">💀</div>
+
+  <div id="stats">
+    Energia: <span id="energy">100</span>%<br>
+    Lanterna: <span id="flash">100</span>%
+  </div>
+
+  <div id="ui">
+    <button onclick="toggleMask()">Máscara</button>
+    <button onclick="useFlash()">Lanterna</button>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
