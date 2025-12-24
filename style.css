@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#hallway, #cameraView {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+#hallway {
+  background: radial-gradient(#333, #000);
+}
+
+#cameraView {
+  background: #000;
+  display: none;
+}
+
+#mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  z-index: 10;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40%;
+}
+
+#ui {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#stats {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+#jumpscare {
+  position: absolute;
+  inset: 0;
+  background: red;
+  display: none;
+  z-index: 20;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40%;
+}
