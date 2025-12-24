@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Night Shift 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div id="menu">
+  <h1>Night Shift 2</h1>
+  <select id="nightSelect">
+    <option value="1">Noite 1</option>
+    <option value="2">Noite 2</option>
+    <option value="3">Noite 3</option>
+  </select>
+  <button onclick="startGame()">Iniciar</button>
+</div>
+
+<!-- JOGO -->
+<div id="game" style="display:none;">
+
+  <div id="cameraView">CAM 01</div>
+  <div id="hallway">Corredor</div>
+
+  <div id="mask">MÁSCARA</div>
+  <div id="jumpscare">💀</div>
+
+  <div id="stats">
+    Energia: <span id="energy">100</span>%<br>
+    Lanterna: <span id="flash">100</span>%<br>
+    Música: <span id="music">100</span>%
+  </div>
+
+  <div id="ui">
+    <button onclick="putMask()">Colocar Máscara</button>
+    <button onclick="removeMask()">Tirar Máscara</button>
+    <button onclick="toggleCamera()">Câmeras</button>
+    <button onclick="windMusic()">🎵</button>
+    <button onclick="useFlash()">🔦</button>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
